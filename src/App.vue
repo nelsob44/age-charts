@@ -15,9 +15,6 @@
       />
     </div>
     <div class="container mx-auto p-4">
-      <div class="ml-12 my-6 text-3xl font-semibold">
-        Audience age
-      </div>
       <Chart />
     </div>
   </div>

@@ -1,5 +1,8 @@
 <template>
   <div class="relative inline-block w-1/4 text-gray-700">
+    <div class="my-6 chart_header">
+      Audience age
+    </div>
     <div class="graph_background_container">
       <div class="graph_background_container_one">
         <span class="label">100</span>
@@ -77,7 +80,7 @@ export default {
 <style scoped>
 .box {
   position: absolute;
-  top: 50%;
+  top: 10rem;
   left: 50%;
   transform: translateX(-50%, -50%);
   width: 20rem;
@@ -141,8 +144,8 @@ export default {
   border-top: dashed 2px #d3d3d3;
   width: 20rem;
   position: absolute;
-  left: 5rem;
-  top: 1px;
+  left: 50%;
+  top: 10rem;
 }
 .graph_background_container_one,
 .graph_background_container_two,
@@ -157,5 +160,19 @@ export default {
   top: -1rem;
   left: -2rem;
   font-weight: bold;
+}
+.chart_header {
+  position: inherit;
+  left: 10rem;
+  font-size: x-large;
+  font-weight: 600;
+}
+@media (max-width: 625px) {
+  .chart_header {
+    position: inherit;
+    left: 2rem;
+    font-size: medium;
+    font-weight: 500;
+  }
 }
 </style>
