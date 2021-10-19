@@ -1,4 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import store from "./store";
+import "./index.css";
 
-createApp(App).mount('#app')
+const app = createApp(App).use(store);
+app.mount("#app");
